@@ -1,0 +1,38 @@
+.comparison {
+  width: 100%;
+  display: grid;
+  grid-template-columns: [left]1fr [spacer] 1em [right] 1fr;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.left {
+  grid-column: left;
+  width: 100%;
+}
+
+.right {
+  grid-column: right;
+  width: 100%;
+}
+
+.comparison > button {
+  background: orangered;
+  color: white;
+  border-style: outset;
+  border-width: 0.2em;
+  padding: 0.5em;
+  margin: 2px;
+  border-radius: 1em;
+}
+
+.comparison > button:hover {
+  background: radial-gradient(ellipse, orange, orangered);
+  font-weight: bold;
+}
+
+.comparison > button:active {
+  background: rgb(158, 42, 0);
+  font-weight: bold;
+  border-style: inset;
+}

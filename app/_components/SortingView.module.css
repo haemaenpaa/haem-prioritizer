@@ -1,0 +1,11 @@
+.list {
+  list-style-type: decimal;
+  list-style: inside decimal;
+  font-weight: bold;
+  background-image: linear-gradient(orangered, orange);
+  padding: 1em;
+  color: white;
+  border-radius: 2em;
+  font-weight: bold;
+  text-align: center;
+}
