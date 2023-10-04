@@ -20,6 +20,7 @@
   background: orangered;
   color: white;
   border-style: outset;
+  border-color: orangered;
   border-width: 0.2em;
   padding: 0.5em;
   margin: 2px;
@@ -28,6 +29,7 @@
 
 .comparison > button:hover {
   background: radial-gradient(ellipse, orange, orangered);
+  border-color: rgb(255, 108, 55);
   font-weight: bold;
 }
 
