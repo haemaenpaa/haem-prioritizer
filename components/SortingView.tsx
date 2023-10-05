@@ -191,6 +191,7 @@ export default function SortingView(props: {
   }, [workset]);
 
   if (currentOrder.length === count) {
+    callback(currentOrder.map((trg) => trg!.value));
     return (
       <ol className={styles.list}>
         {currentOrder.map((trg) => (

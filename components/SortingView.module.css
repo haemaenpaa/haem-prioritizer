@@ -1,6 +1,5 @@
 .list {
   list-style-type: decimal;
-  list-style: inside decimal;
   font-weight: bold;
   background-image: linear-gradient(orangered, orange);
   padding: 1em;

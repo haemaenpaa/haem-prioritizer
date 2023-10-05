@@ -8,8 +8,8 @@ export default function ListView(props: {
   const { values, ordered, onDelete } = props;
 
   const listItems = values.map((value, index) => (
-    <li className={styles.listItem}>
-      <p className={styles.listValue}>{value}</p>
+    <li key={index} className={styles.listItem}>
+      {value}
       {onDelete ? (
         <button className={styles.deleteButton} onClick={() => onDelete(index)}>
           X
@@ -21,10 +21,8 @@ export default function ListView(props: {
   ));
 
   if (ordered) {
-    return <ol className={styles.ordered + " " + styles.list}>{listItems}</ol>;
+    return <ol className={styles.list}>{listItems}</ol>;
   } else {
-    return (
-      <ul className={styles.unordered + " " + styles.list}>{listItems}</ul>
-    );
+    return <ul className={styles.list}>{listItems}</ul>;
   }
 }
